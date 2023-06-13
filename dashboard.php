@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <title>Canteen Management System</title>
-</head>
-<body>
-    <header>
-       <section class="banner">
-        <!-- <img src="./img/Banner.jpg" alt="Banner"> -->
-       </section> 
-       <nav class="navbar">
+<?php
+include './Common/header.php';
+?>
+    <main class="container">
+        <div class="sidebar">
             <ul>
-                <li><a href="#">User</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#">Welcome</a></li>
+                <?php 
+                $role=$_GET['role'];
+                if($role=='Admin'){
+                    ?>
+                <li><a href="./Admin/addItems.php?role=<?php echo $role?>">Add</a></li>
+                <li><a href="view.php?role=<?php echo $role?>">View</a></li>
+                <?php
+                }else{
+                ?>
+                 <li><a href="view.php?role=<?php echo $role?>">View</a></li>
+                 <?php
+                }
+                ?>
             </ul>
+        </div>
+        <div>
 
-
-       </nav>
-    </header>
+        </div>
+    </main>
 </body>
 </html>

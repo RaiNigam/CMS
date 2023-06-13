@@ -3,10 +3,78 @@
     padding:0;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
 .banner{
     width:100%;
-    height:200px;
+    height:150px;
     background-repeat: no-repeat; 
     background-size: cover;
     background-image: url(../img/Banner.jpg); 
 }
+.navbar{
+    height:60px;
+    background-color:#353535;
+    width:100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;
+    
+}
+.nav-links li{
+    border:2px solid black;
+    padding:10px 50px;
+ 
+}
+.nav-links li:first-child{
+    margin-left: 30px;
+}
+.nav-links li:last-child{
+    margin-right: 30px;
+}
+.nav-links li a{
+    
+    color:white;
+}
+.nav-links li:hover{
+    background-color: orange;
+    color:black;
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border:2px solid black;
+    height:67vh;
+}
+.sidebar{
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+.sidebar ul li{
+    margin-bottom: 40px;
+}
+.sidebar ul li a{
+    color:black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.sidebar ul li a:hover{
+    color:orangered;
+}
+.role{
+    margin-left: 10px;
+    color:greenyellow;
+}
+

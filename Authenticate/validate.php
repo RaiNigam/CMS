@@ -4,7 +4,7 @@ if(isset($_POST["submit"])){
     $password=$_POST["password"];
     // $role=$_POST["role"];
     if($id==="Admin"&&$password==="admin"||$id==="Guest"&&$password==="guest"){
-        header('Location:../dashboard.php');
+        header('Location:../dashboard.php?role='.$id);
     }
     else{
         echo "Not valid details!!";
@@ -21,11 +21,7 @@ if(isset($_POST["submit"])){
             <label for="#">Password</label>
             <input type="text"  class="form-control password" value="<?php echo $password?>">
 </div>
-    <!-- <div class="form-group">
-        <label for="#">Role</label>
-        <input type="text"  value="<?php echo $role?>">
-    </div> -->
-
+   
 </form>
    
 
