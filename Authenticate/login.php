@@ -15,14 +15,14 @@
             <label for="#">Password</label>
             <input type="password" name="password" class="form-control password">
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="#">Role</label>
             <select name="role">
                 <option>Admin</option>
                 <option>Student</option>
                 <option>Teacher</option>
             </select>
-        </div>
+        </div> -->
         <input type="submit" name="submit" value="Submit">
     </form>
 </body>
