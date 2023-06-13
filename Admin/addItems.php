@@ -6,7 +6,7 @@ include '../Common/header.php';
 </head>
 <body>
     <section>
-        <h1 style="text-align:center;margin:20px 0 20px 0">Add Items</h1>
+        <h1 style="text-align:center;margin:20px 0 20px 0;font-size:2rem">Items</h1>
     <table border="1" cellspacing="0" >
         <thead>
             <tr>
@@ -51,6 +51,7 @@ include '../Common/header.php';
             </tr>
         </tbody>
     </table>
+    <button style="margin:15px 43vw 0;width:200px;padding:10px 20px;cursor:pointer;">Add an Item</button>
     </section>
   
 </body>
