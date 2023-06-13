@@ -1,0 +1,23 @@
+.items{
+    display: grid;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    height:35vh;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    border:5px solid black;
+    gap:20px;
+}
+.item-image img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
